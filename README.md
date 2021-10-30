@@ -1,4 +1,5 @@
 # REGRESSION ANALYSIS
+---
 
 ## OVERVIEW
 * Regression Analysis / Regression Algorithm is one of the basic technique in Machine Leaning.
@@ -35,7 +36,7 @@ The Basic metrics that divide the regression techniques are : </br>
 
 ### Linear Regression
 The one of the most widely knows and mostly used regression technique.The nature of the regression line say the best fit line is Linear hence its called as **Linear Regression**.
-Basic Equation on which Linear regression works is $ Y=a+b(X)+e $ , where a is intercept,b is slope and e is error.<br>
+Basic Equation on which Linear regression works is <img src="https://render.githubusercontent.com/render/math?math=Y=a+b(X)+e">  , where a is intercept,b is slope and e is error.<br>
 The Linear Regression can be classified as :<br>
 <li>Simple Linear Regression</li>
 <li>Multiple Linear Regression</li>
@@ -58,8 +59,8 @@ And the Best Fit line / curve  is like :
 ### Polynomial Regression
 
 If the Linear line of linear regression gives high sum of square error and on plot we able to detect that the data is curvy in nature rather than linear, we can plot a curve.It shows that the independant variable has  degree more than 1.<br>
-Equation For Polynomial regression :
-                                    $y=a+(b*x^2)$
+Equation For Polynomial regression :<img src="https://render.githubusercontent.com/render/math?math=y=a+(b*x^2)">
+                               
 
 The Best Fit Line looks like :
 
@@ -67,7 +68,14 @@ The Best Fit Line looks like :
 
 ### Ridge Regression
 
-Lasso (Least Absolute Shrinkage and Selection Operator)) is similar to the Ridge, the only difference between them is the penalty.Lasso can shrink the size of regression coefficent to absolute 0.That makes the elemination of an variable.causing feature selection,reducing multicolinearity and improving accuracy of model.The Shrinkage paramter here is $\alpha$ (Alpha).<br>
+Ridge Regression used in special cases according to the data.Data consisting multiple features and they show multicolinearity .It works on the principal od Bias-Variance Tredoff. when a model has high variance , some degree of bias added for lowering  variance and getting good results.This added bias in the error with a **Shrinkage Parameter** <img src="https://render.githubusercontent.com/render/math?math=\lambda">(lambda).This extra term added called as Penalty.The penalty in Ridge regression can make coefficent close to 0.<br>
+* This is an reguliztion method and uses L2 Regulizaion.<br>
+
+**Formula :**<br>
+<image src=https://i.ytimg.com/vi/Ddc5z-YujOQ/maxresdefault.jpg  width=700 height=400>
+
+### Lasso Regression
+Lasso (Least Absolute Shrinkage and Selection Operator)) is similar to the Ridge, the only difference between them is the penalty.Lasso can shrink the size of regression coefficent to absolute 0.That makes the elemination of an variable.causing feature selection,reducing multicolinearity and improving accuracy of model.The Shrinkage paramter here is <img src="https://render.githubusercontent.com/render/math?math=\alpha">(Alpha).<br>
 * This is a Regulization method and uses L1 regulization.
 
 Formula :<br>
